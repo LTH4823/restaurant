@@ -29,8 +29,9 @@ public class RestaurantUI {
     private void inputPrice() {
         System.out.println("얼마?");
         int money = Integer.parseInt(scanner.nextLine());
-        restaurant.getMenusByPrice(money).forEach(menu -> System.out.println(menu));
-
+        System.out.println(restaurant.getMenusByPrice(money).name+"\t"+restaurant.getMenusByPrice(money).price+"원");
+        // ArrayList
+        //restaurant.getMenusByPrice(money).forEach(menu -> System.out.println(menu));
     }
 
     private  void showMenus(){
