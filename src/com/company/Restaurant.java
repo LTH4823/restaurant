@@ -28,13 +28,6 @@ public class Restaurant {
             }
         }
 
-        for (:
-             ) {
-            
-        }
-        
-        
-        
         return result;
     }
 
