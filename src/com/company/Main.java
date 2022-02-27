@@ -10,8 +10,5 @@ public class Main {
         RestaurantUI ui = new RestaurantUI(restaurant, scanner);
 
         ui.init();
-
-
-
     }
 }

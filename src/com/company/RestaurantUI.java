@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.Scanner;
 
 public class RestaurantUI {
@@ -20,15 +19,24 @@ public class RestaurantUI {
         switch (oper){
             case 1:
                 inputPrice();
+                break;
+            case 2:
+                showMenus();
+                break;
         }
     }
 
     private void inputPrice() {
-
         System.out.println("얼마?");
         int money = Integer.parseInt(scanner.nextLine());
-
         restaurant.getMenusByPrice(money).forEach(menu -> System.out.println(menu));
 
+    }
+
+    private  void showMenus(){
+        System.out.println("현재 메뉴는 아래와 같이 준비되어 있습니다.");
+        for (Menu menu : restaurant.getAllMenus()) {
+            System.out.println(menu.name+"\t"+menu.price+"원");
+        }
     }
 }
