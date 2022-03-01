@@ -30,7 +30,7 @@ public class RestaurantUI {
         System.out.println("얼마?");
         int money = Integer.parseInt(scanner.nextLine());
         System.out.println(restaurant.getMenusByPrice(money).name+"\t"+restaurant.getMenusByPrice(money).price+"원");
-        // ArrayList
+        // ArrayList 의 경우
         //restaurant.getMenusByPrice(money).forEach(menu -> System.out.println(menu));
     }
 
